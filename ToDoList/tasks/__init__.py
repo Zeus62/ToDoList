@@ -2,4 +2,4 @@ from flask import Blueprint
 
 tasks = Blueprint('tasks', __name__)
 
-from Tasks import routes
+from ToDoList.tasks.routes import *

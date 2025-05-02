@@ -1,7 +1,7 @@
 from . import tasks
 from flask import render_template, redirect, url_for, session, abort
 from .forms import TaskForm
-from models import db, User, Task
+from ..models import db, User, Task
 
 @tasks.route('/dashboard')
 def dashboard():

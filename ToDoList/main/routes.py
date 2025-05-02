@@ -1,5 +1,5 @@
 from flask import render_template
-from Main import main
+from ToDoList.main import main
 
 @main.route('/')
 def index():
