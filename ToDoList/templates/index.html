@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+        
+        .description {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .signin {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .signup {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Ahmed Esmat To-Do List App</h1>
+    </div>
+    
+    <div class="buttons">
+    <a href="{{ url_for('users.signin') }}"><button class="button signin">Sign In</button></a>
+    <a href="{{ url_for('users.signup') }}"><button class="button signup">Sign Up</button></a>
+</div>
+</body>
+</html>
